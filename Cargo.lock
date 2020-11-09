@@ -4,116 +4,114 @@
 name = "embedded-hal"
 version = "0.2.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fa998ce59ec9765d15216393af37a58961ddcefb14c753b4816ba2191d865fcb"
 dependencies = [
- "nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "nb",
+ "void",
 ]
 
 [[package]]
 name = "ioctl-rs"
 version = "0.1.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f7970510895cee30b3e9128319f2cefd4bde883a39f38baa279567ba3a7eb97d"
 dependencies = [
- "libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc",
 ]
 
 [[package]]
 name = "libc"
 version = "0.2.66"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d515b1f41455adea1313a4a2ac8a8a477634fbae63cc6100e3aebb207ce61558"
 
 [[package]]
 name = "mh-z19"
-version = "0.2.0"
+version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08e20228a4dda61bd521e7316780ba2ec8d88170e4999fbd641c1da98e2eea28"
 
 [[package]]
 name = "mhtest"
 version = "0.1.0"
 dependencies = [
- "embedded-hal 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "mh-z19 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial-embedded-hal 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "embedded-hal",
+ "mh-z19",
+ "nb",
+ "serial",
+ "serial-embedded-hal",
 ]
 
 [[package]]
 name = "nb"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b1411551beb3c11dedfb0a90a0fa256b47d28b9ec2cdff34c25a2fa59e45dbdc"
 
 [[package]]
 name = "serial"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a1237a96570fc377c13baa1b88c7589ab66edced652e43ffb17088f003db3e86"
 dependencies = [
- "serial-core 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial-unix 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial-windows 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serial-core",
+ "serial-unix",
+ "serial-windows",
 ]
 
 [[package]]
 name = "serial-core"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f46209b345401737ae2125fe5b19a77acce90cd53e1658cda928e4fe9a64581"
 dependencies = [
- "libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc",
 ]
 
 [[package]]
 name = "serial-embedded-hal"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2a7cadc3875ff6a2a8aa4262aa47878f4039b1c42d8db91cd9fa6f352e93b1cc"
 dependencies = [
- "embedded-hal 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)",
- "nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "embedded-hal",
+ "nb",
+ "serial",
 ]
 
 [[package]]
 name = "serial-unix"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f03fbca4c9d866e24a459cbca71283f545a37f8e3e002ad8c70593871453cab7"
 dependencies = [
- "ioctl-rs 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
- "libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial-core 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "termios 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "ioctl-rs",
+ "libc",
+ "serial-core",
+ "termios",
 ]
 
 [[package]]
 name = "serial-windows"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "15c6d3b776267a75d31bbdfd5d36c0ca051251caafc285827052bc53bcdc8162"
 dependencies = [
- "libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)",
- "serial-core 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc",
+ "serial-core",
 ]
 
 [[package]]
 name = "termios"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d5d9cf598a6d7ce700a4e6a9199da127e6819a61e64b68609683cc9a01b5683a"
 dependencies = [
- "libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc",
 ]
 
 [[package]]
 name = "void"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-
-[metadata]
-"checksum embedded-hal 0.2.4 (registry+https://github.com/rust-lang/crates.io-index)" = "fa998ce59ec9765d15216393af37a58961ddcefb14c753b4816ba2191d865fcb"
-"checksum ioctl-rs 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)" = "f7970510895cee30b3e9128319f2cefd4bde883a39f38baa279567ba3a7eb97d"
-"checksum libc 0.2.66 (registry+https://github.com/rust-lang/crates.io-index)" = "d515b1f41455adea1313a4a2ac8a8a477634fbae63cc6100e3aebb207ce61558"
-"checksum mh-z19 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "03fb58816176dd6f2b0aac80478bd2bc365f200181a8db211ae0277dec022ad3"
-"checksum nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "b1411551beb3c11dedfb0a90a0fa256b47d28b9ec2cdff34c25a2fa59e45dbdc"
-"checksum serial 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "a1237a96570fc377c13baa1b88c7589ab66edced652e43ffb17088f003db3e86"
-"checksum serial-core 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3f46209b345401737ae2125fe5b19a77acce90cd53e1658cda928e4fe9a64581"
-"checksum serial-embedded-hal 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)" = "2a7cadc3875ff6a2a8aa4262aa47878f4039b1c42d8db91cd9fa6f352e93b1cc"
-"checksum serial-unix 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "f03fbca4c9d866e24a459cbca71283f545a37f8e3e002ad8c70593871453cab7"
-"checksum serial-windows 0.4.0 (registry+https://github.com/rust-lang/crates.io-index)" = "15c6d3b776267a75d31bbdfd5d36c0ca051251caafc285827052bc53bcdc8162"
-"checksum termios 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "d5d9cf598a6d7ce700a4e6a9199da127e6819a61e64b68609683cc9a01b5683a"
-"checksum void 1.0.2 (registry+https://github.com/rust-lang/crates.io-index)" = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
+checksum = "6a02e4885ed3bc0f2de90ea6dd45ebcbb66dacffe03547fadbb0eeae2770887d"
